@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-1">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform </p>
+        </div>
+        <div class="form-list">
+            <form action="#" id="survey-form">
+                <ul>
+                    <li>
+                        <label for="name" id="label-name">Name:</label><br>
+                        <input placeholder="Enter your name" type="text" id="name" name="user_name" required/>
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label><br>
+                        <input placeholder="Enter your Email" type="email" id="mail" name="user_email" required/>
+                    </li>
+                    <li>
+                        <label for="number">Age:</label><br>
+                        <input placeholder="Age" type="number" id="number" name="user_email" min="10" max="40"/>
+                    </li>
+                    <li>
+                        <label for="roles">Which option best describes your current role?</label><br>
+                        <select name="roles" id="roles">
+                            <option value="Select currnt role">Select currnt role</option>
+                            <option value="Student">Student</option>
+                            <option value="Full Time Jobs">Full Time Jobs</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="friend">Would you recommend freeCodeCamp to a friend?</label><br>
+                        <input class="input-radio" type="radio" name="friend">Definitely<br>
+                        <input class="input-radio" type="radio" name="friend">Maybe<br>
+                        <input class="input-radio" type="radio" name="friend">Not sure<br>
+
+                    </li>
+                    <li>
+                        <label for="check-list">What would you like to see improved? <span>(Check all that apply)</span></label><br>
+                        <input class="ckeck-box" type="checkbox">Front-end Projects<br>
+                        <input class="ckeck-box"  type="checkbox">Back-end Projects<br>
+                        <input class="ckeck-box"  type="checkbox">Data Visualization<br>
+                        <input class="ckeck-box"  type="checkbox">Challenges<br>
+                        <input class="ckeck-box" type="checkbox">Open Source Community<br>
+                        <input class="ckeck-box" type="checkbox">Gitter help rooms<br>
+                        <input class="ckeck-box" type="checkbox">Videos<br>
+                        <input class="ckeck-box" type="checkbox">City Meetups<br>
+                        <input class="ckeck-box" type="checkbox">Wiki<br>
+                        <input class="ckeck-box" type="checkbox">Forum<br>
+                        <input class="ckeck-box" type="checkbox">Additional Courses<br>
+                        
+                    </li>
+                    <li>
+                        <label for="msg">Any comments or suggestions?</label><br>
+                        <textarea placeholder="Enter your comment here...." id="msg" name="user_message"></textarea>
+                    </li>
+                   <li>
+                    <input id="submit-form" type="submit" value="Submit">
+                   </li>
+                </ul>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
